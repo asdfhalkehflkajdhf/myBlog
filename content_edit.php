@@ -137,7 +137,7 @@ var articleTitle = new Vue({
 						alert(result.msg)
 						console.log(result.msg);
 					}
-					//history.back();
+					history.back();
 
 				}
 			});
