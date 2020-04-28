@@ -219,7 +219,9 @@ final class blog_db{
 function transform_sql($str){
 	return addslashes($str);
 }
-
+function transform_html($str){
+	return stripcslashes($str);
+}
 ///////////////////////email//////////////////////
 
 
