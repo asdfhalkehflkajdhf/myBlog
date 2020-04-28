@@ -13,6 +13,6 @@ if(file_exists($file)){
 
 	<h1 class="bd-title"><?php echo $g_title;?></h1>
 	<div class="m-auto m-t-30">
-		<?php echo $current;?>
+		<?php echo transform_html($current);?>
 	</div>
 	<hr>
