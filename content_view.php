@@ -23,8 +23,8 @@ require_once( 'api/conn.php' );
 		
 
 				echo '<div id="articleContent">';
-					//<!-- 内容 -->
-				echo $res['content'];	
+				//<!-- 内容 -->
+				echo transform_html($res['content']);	
 				echo '</div>';
 			?>
 			
