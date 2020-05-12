@@ -6,7 +6,7 @@ require_once( 'api/conn.php' );
 //读取文件内容
 $file = 'res/head.txt';
 if(file_exists($file)){
-	$current = file_get_contents($file);
+	$current = transform_html(file_get_contents($file));
 }else{
 	$current = "";
 }

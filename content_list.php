@@ -20,7 +20,7 @@ require_once( 'api/conn.php' );
 					foreach ($v as $t=>$itemList) {
 						echo '<h4>'.$t.'</h4>';
 						foreach ($itemList as $item) {
-							echo '<li><a  class="font-weight-bold text-reset"  href="./?i='.$item['id'].'">'.$item['title'].'</a> <small class="font-weight-light">'.$item['month'].'-'.$item['day'].'</small>';
+							echo '<li><a  class="font-weight-bold text-reset"  href="./?i='.$item['id'].'">'.transform_html($item['title']).'</a> <small class="font-weight-light">'.$item['month'].'-'.$item['day'].'</small>';
 							if($adminOtp!=""){
 								echo ' <a href="./?i='.$item['id'].'&m='.$g_article_mod.'&u='.$g_user_name.'"><i class="fa fa-edit fa-fw"></i></a>';
 							}

@@ -8,7 +8,7 @@ require_once( 'api/conn.php' );
 	}
 	$content="";
 	if(isset($res['content'])){
-		$content=$res['content'];
+		$content=transform_html($res['content']);
 	}
 	$type=1;
 	if(isset($res['type'])){
@@ -16,7 +16,7 @@ require_once( 'api/conn.php' );
 	}
 	$title="";
 	if(isset($res['title'])){
-		$title=$res['title'];
+		$title=transform_html($res['title']);
 	}
 ?>
 
@@ -59,7 +59,7 @@ require_once( 'api/conn.php' );
 
 // 编辑框初始化
 var editor_si = wangEditorInit('articleContentMenu','articleContent');
-editor_si.txt.html("<?php echo $content;?>");
+editor_si.txt.html('<?php echo $content;?>');
 
 var articleTitle = new Vue({
 	el: '#articleTitle',
