@@ -41,7 +41,10 @@ require_once( 'api/conn.php' );
 
 		</div>
 
-		
+
+		<div class="navbar sticky-top navbar-light bg-light" style="z-index:20000;">
+			<div  id="articleContentMenu" ></div>
+		</div>		
 		<div  id="articleContentMenu"></div>
 		<div id="articleContent">
 			<!-- 内容 -->
