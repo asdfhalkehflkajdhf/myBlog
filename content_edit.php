@@ -45,6 +45,7 @@ require_once( 'api/conn.php' );
 		<div  id="articleContentMenu"></div>
 		<div id="articleContent">
 			<!-- 内容 -->
+			<?php echo $content;?>
 		</div>
 
 
@@ -59,7 +60,7 @@ require_once( 'api/conn.php' );
 
 // 编辑框初始化
 var editor_si = wangEditorInit('articleContentMenu','articleContent');
-editor_si.txt.html('<?php echo $content;?>');
+//editor_si.txt.html('');
 
 var articleTitle = new Vue({
 	el: '#articleTitle',
