@@ -29,6 +29,8 @@ require_once( 'api/conn.php' );
 			<div class="row">
 				<p class="m-auto">
 					©️2019-<?php echo date("Y");?> <a href="/"><?php echo $g_author;?></a> blog
+					<a target="_blank" href="http://www.beian.miit.gov.cn" rel="nofollow" >&nbsp;京ICP备18030752号-2&nbsp;</a> 
+                        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=13072802000022" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">&nbsp;<img src="../res/img/备案图标.png" style="float:left;"/>冀公网安备 13072802000022号&nbsp;</a>
 				</p>
 			</div>
 		</footer>
